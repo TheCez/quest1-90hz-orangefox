@@ -62,7 +62,7 @@ off.
 
 ---
 
-## Part 1 — Test on your inactive slot first (zero risk to daily use)
+## Part 1 — Test on your inactive slot first
 
 The inactive slot isn't what you boot day to day — testing here can't
 break normal use even if something goes wrong. Substitute `a`/`b` below
