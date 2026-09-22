@@ -38,6 +38,30 @@ All releases: https://github.com/TheCez/quest1-90hz-orangefox/releases
 
 ---
 
+## Using OrangeFox with hardware buttons (no touchscreen)
+
+Quest 1 has no touchscreen, so this build has a hardware-button
+navigation mode built in.
+
+**Activate/toggle it:** hold **Volume Up + Volume Down together for ~3
+seconds**. A highlight box appears around the focused element — that
+means it's on.
+
+**Once active:**
+- **Volume Up / Volume Down** → move focus between buttons/items
+- **Power** → select / activate the focused item
+
+Hold **Volume Up + Volume Down** again for ~3 seconds to toggle it back
+off.
+
+**Sliders (swipe-to-confirm, e.g. installing a zip or wiping data):**
+- Focus the slider — **red** boundary = focused, not active yet.
+- Press **Power** — boundary turns **green** = slider is now active.
+- Press **Volume Up** 3 times — swipes it across (confirms the action).
+- Press **Power** again to release it.
+
+---
+
 ## Part 1 — Test on your inactive slot first (zero risk to daily use)
 
 The inactive slot isn't what you boot day to day — testing here can't
@@ -151,3 +175,10 @@ you run a Factory Reset: that's what actually strips the existing
 encryption footer so the patched fstab can take effect cleanly on the
 next boot. Needs to be flashed separately on each slot you use it on,
 since `/system` (and its fstab) is per-slot on this device.
+
+---
+
+⚠️ **Do this at your own risk.** Unlocking, flashing, and modifying
+system partitions can brick your device if a step is skipped or done out
+of order. Backups exist for a reason — use them. Not responsible for
+bricked headsets.
